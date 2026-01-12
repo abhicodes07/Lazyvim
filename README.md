@@ -18,9 +18,6 @@
 
 ---
 
-> [!IMPORTANT] Install Instructions
-> Install requires Neovim 0.9+. Always review the code before installing a configuration.
-
 ## 🌺 About
 
 Hey folks!👋
@@ -131,6 +128,9 @@ This setup of **Lazyvim** offers an aesthetically pleasing and highly efficient 
 ## 🔧 Plugins Suite
 
 ## 💡 Getting Started
+
+> [!IMPORTANT] Install Instructions
+> Install requires Neovim 0.9+. Always review the code before installing a configuration.
 
 1. Clone this repo: `git clone https://github.com/abhicodes07/Lazyvim.git`
 2. Run Neovim and let plugins install automatically.
