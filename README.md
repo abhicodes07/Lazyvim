@@ -18,8 +18,27 @@
 
 ---
 
-> [!TIP] Install Instructions
+> [!IMPORTANT] Install Instructions
 > Install requires Neovim 0.9+. Always review the code before installing a configuration.
+
+## 🌺 About
+
+Hey folks!👋
+
+Welcome to my personal **Neovim** configuration, a polished Lazyvim-based configuration tailored for developers to supercharge their workflows.
+This setup of **Lazyvim** offers an aesthetically pleasing and highly efficient editing experience.
+
+> [!NOTE]
+> Check out my [**Dotfiles**](https://github.com/abhicodes07/dotfiles) configurations curated for WSL2 based systems 🌟.
+
+## ✨ Core Features
+
+- 💤 **Lazy-loading plugins** for optimal performance
+- 🔍 **Telescope**: A fuzzy finder for projects, files, and beyond
+- 🔄 Easy switching between **terminal and Neovim**
+- 🛠️ **LSP** support for code completions and diagnostics
+- 📦 **Mason** for managing LSP servers, formatters, and linters
+- 🖌️ Beautiful themes and UI enhancements
 
 ## 📚 Colorschemes
 
@@ -108,3 +127,13 @@
     </td>
   </tr>
 </table>
+
+## 🔧 Plugins Suite
+
+## 💡 Getting Started
+
+1. Clone this repo: `git clone https://github.com/abhicodes07/Lazyvim.git`
+2. Run Neovim and let plugins install automatically.
+3. Customize your workflow via `init.lua`.
+
+Enjoy coding with speed and convenience ✨.
