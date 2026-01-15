@@ -32,7 +32,7 @@ require("lazy").setup({
         -- tokyodark
         -- material-deep-ocean
         -- nord
-        colorscheme = "catppuccin",
+        colorscheme = "material-deep-ocean",
       },
     },
     { import = "lazyvim.plugins.extras.lang.typescript" },

@@ -52,10 +52,11 @@ keymap.set("n", "<leader>hs", "<cmd>Shades<CR>", { desc = "Pick Shades" })
 
 -- diagnostics
 keymap.set("n", "<C-j>", function()
+  ---@diagnostic disable-next-line: deprecated
   vim.diagnostic.goto_next()
 end, opts)
 
 -- material theme
-keymap.set("n", "<C-m>", function()
-  require("material.functions").find_style()
-end)
+-- keymap.set("n", "<C-m>", function()
+--   require("material.functions").find_style()
+-- end)
