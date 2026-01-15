@@ -9,7 +9,7 @@ return {
         terminal = false, -- Enable contrast for terminal
         sidebars = true, -- Enable contrast for sidebar-like windows
         floating_windows = true, -- Enable contrast for floating windows
-        cursor_line = true, -- Enable subtle cursor line highlighting
+        cursor_line = false, -- Enable subtle cursor line highlighting
         lsp_virtual_text = false, -- Enable contrasted background for lsp virtual text
         non_current_windows = true, -- Enable contrasted background for non-current windows
         filetypes = { "python", "html", "htmldjango", "lua", "c", "cpp", "java", "javascript", "markdown" }, -- Specify which filetypes get the contrasted (darker) background
@@ -43,12 +43,12 @@ return {
         -- "neorg",
         -- "neotest",
         -- "noice",
-        "nvim-cmp",
+        -- "nvim-cmp",
         -- "nvim-navic",
         "nvim-notify",
         "nvim-tree",
-        -- "nvim-web-devicons",
-        -- "rainbow-delimiters",
+        "nvim-web-devicons",
+        "rainbow-delimiters",
         -- "sneak",
         "telescope",
         "trouble",
