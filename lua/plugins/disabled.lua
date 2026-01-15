@@ -4,4 +4,5 @@ return {
 
   -- disable colorizer
   { "catgoose/nvim-colorizer.lua", enabled = false },
+  { "mfussenegger/nvim-dap", enabled = false },
 }
