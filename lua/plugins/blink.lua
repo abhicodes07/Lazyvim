@@ -1,7 +1,10 @@
 return {
   "saghen/blink.cmp",
   dependencies = {
-    { "rafamadriz/friendly-snippets" },
+    {
+      "L3MON4D3/LuaSnip",
+      dependencies = { "rafamadriz/friendly-snippets" },
+    },
     {
       "onsails/lspkind.nvim",
       opts = {
@@ -12,6 +15,7 @@ return {
         },
       },
     },
+    { "nvim-tree/nvim-web-devicons", opts = {} },
   },
   opts = {
     appearance = {
@@ -72,22 +76,54 @@ return {
       },
     },
 
+    cmdline = { enabled = false },
+
     completion = {
+      keyword = { range = "full" },
       menu = {
-        border = "single",
+        enabled = true,
+        min_width = 25,
+        max_height = 20,
+        border = "rounded",
         draw = {
           padding = { 0, 1 },
           components = {
             kind_icon = {
               text = function(ctx)
-                return " " .. ctx.kind_icon .. ctx.icon_gap .. " "
+                if vim.tbl_contains({ "Path" }, ctx.source_name) then
+                  local mini_icon, _ = require("mini.icons").get_icon(ctx.item.data.type, ctx.label)
+                  if mini_icon then
+                    return mini_icon .. ctx.icon_gap
+                  end
+                end
+
+                local icon = require("lspkind").symbolic(ctx.kind, { mode = "symbol" })
+                return icon .. ctx.icon_gap
+              end,
+
+              -- Optionally, use the highlight groups from mini.icons
+              -- You can also add the same function for `kind.highlight` if you want to
+              -- keep the highlight groups in sync with the icons.
+              highlight = function(ctx)
+                if vim.tbl_contains({ "Path" }, ctx.source_name) then
+                  local mini_icon, mini_hl = require("mini.icons").get_icon(ctx.item.data.type, ctx.label)
+                  if mini_icon then
+                    return mini_hl
+                  end
+                end
+                return ctx.kind_hl
               end,
             },
             kind = {
               -- (optional) use highlights from mini.icons
               highlight = function(ctx)
-                local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
-                return hl
+                if vim.tbl_contains({ "Path" }, ctx.source_name) then
+                  local mini_icon, mini_hl = require("mini.icons").get_icon(ctx.item.data.type, ctx.label)
+                  if mini_icon then
+                    return mini_hl
+                  end
+                end
+                return ctx.kind_hl
               end,
             },
             item_idx = {
@@ -98,15 +134,22 @@ return {
             },
           },
           columns = {
-            { "item_idx" },
-            { "kind_icon", "label", "label_description", gap = 1 },
-            { "kind" },
+            { "item_idx", "kind_icon", gap = 1 },
+            { "label", "label_description", gap = 2 },
+            { "kind", gap = 1 },
           },
         },
       },
-      documentation = { window = { border = "single" } },
+      documentation = {
+        auto_show = true,
+        auto_show_delay_ms = 500,
+        window = { border = "rounded" },
+      },
+      ghost_text = {
+        enabled = true,
+      },
     },
 
-    signature = { window = { border = "single" } },
+    signature = { window = { border = "rounded" } },
   },
 }
