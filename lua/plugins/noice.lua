@@ -28,6 +28,11 @@ return {
       opts = {}, -- merged with defaults from documentation
     },
   },
+  config = {
+    notify = {
+      enabled = false,
+    },
+  },
   dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify",
