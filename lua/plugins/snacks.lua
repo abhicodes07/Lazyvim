@@ -10,7 +10,7 @@ return {
 
     -- notifier
     notifier = {
-      enabled = true,
+      enabled = false,
       timeout = 5000,
       padding = true,
       style = "fancy",
