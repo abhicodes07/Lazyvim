@@ -63,6 +63,14 @@ return {
     "folke/which-key.nvim",
     opts = {
       preset = "helix", -- Values : helix, classic, modern
+      defaults = {},
+      spec = {
+        {
+          mode = { "n", "x" },
+          { "<leader>", group = "Leader" },
+          { "<leader>t", group = "toggleterm" },
+        },
+      },
     },
   },
 
