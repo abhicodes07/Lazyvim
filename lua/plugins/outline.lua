@@ -11,5 +11,22 @@ return {
       position = "right",
       split_command = "belowright",
     },
+
+    guides = {
+      markers = {
+        bottom = "╰",
+      },
+    },
+
+    symbols = {
+      icons = {
+        File = { icon = "", hl = "Identifier" },
+        Number = { icon = "", hl = "Number" },
+        Key = { icon = "󰷖", hl = "Type" },
+        Null = { icon = "󰟢", hl = "Type" },
+        Operator = { icon = "", hl = "Identifier" },
+        Constructor = { icon = "󱁤", hl = "Special" },
+      },
+    },
   },
 }

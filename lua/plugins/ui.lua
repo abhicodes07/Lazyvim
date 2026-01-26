@@ -68,7 +68,10 @@ return {
         {
           mode = { "n", "x" },
           { "<leader>", group = "Leader" },
-          { "<leader>t", group = "toggleterm" },
+          { "<leader>t", group = "Toggle term" },
+          { "<leader>o", group = "Toggle outlines" },
+          { "<leader>sf", group = "File browser" },
+          { ";", group = "Telescope" },
         },
       },
     },
