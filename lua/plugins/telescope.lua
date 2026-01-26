@@ -9,23 +9,6 @@ return {
   },
   keys = {
     {
-      "<leader>se", -- Spell Suggest
-      function()
-        local opts = {
-          theme = "cursor",
-          layout_config = {
-            width = 50,
-            height = 9,
-            mode = "normal",
-          },
-        }
-        local builtin = require("telescope.builtin")
-        local themes = require("telescope.themes")
-        builtin.spell_suggest(themes.get_cursor(opts))
-      end,
-      desc = "Spell Suggest",
-    },
-    {
       "<leader>fB",
       function()
         require("telescope.builtin").find_files({
@@ -35,7 +18,39 @@ return {
       desc = "Find Plugin File",
     },
     {
-      ";f",
+      ";b", -- Buffers
+      function()
+        local builtin = require("telescope.builtin")
+        builtin.buffers()
+      end,
+      desc = "Buffers",
+    },
+    {
+      ";d", -- diagnostics
+      function()
+        local builtin = require("telescope.builtin")
+        builtin.diagnostics()
+      end,
+      desc = "Diagnostics",
+    },
+    {
+      ";e", -- Spell Suggest
+      function()
+        local opts = {
+          theme = "cursor",
+          layout_config = {
+            width = 50,
+            height = 9,
+          },
+        }
+        local builtin = require("telescope.builtin")
+        local themes = require("telescope.themes")
+        builtin.spell_suggest(themes.get_cursor(opts))
+      end,
+      desc = "Spell Suggest",
+    },
+    {
+      ";f", -- Find files
       function()
         local builtin = require("telescope.builtin")
         builtin.find_files({
@@ -43,20 +58,15 @@ return {
           hidden = true,
         })
       end,
+      desc = "Find files",
     },
     {
-      ";r", -- live grep
+      ";g", -- live grep
       function()
         local builtin = require("telescope.builtin")
         builtin.live_grep()
       end,
-    },
-    {
-      "\\\\",
-      function()
-        local builtin = require("telescope.builtin")
-        builtin.buffers()
-      end,
+      desc = "Grep",
     },
     {
       ";t", -- help tags
@@ -64,20 +74,23 @@ return {
         local builtin = require("telescope.builtin")
         builtin.help_tags()
       end,
+      desc = "Help tags",
     },
     {
-      ";;",
+      ";p", -- planets
+      function()
+        local builtin = require("telescope.builtin")
+        builtin.planets()
+      end,
+      desc = "Planets",
+    },
+    {
+      ";r", -- Resume
       function()
         local builtin = require("telescope.builtin")
         builtin.resume()
       end,
-    },
-    {
-      ";e", -- diagnostics
-      function()
-        local builtin = require("telescope.builtin")
-        builtin.diagnostics()
-      end,
+      desc = "Resume",
     },
     {
       "sf",

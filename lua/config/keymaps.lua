@@ -3,7 +3,11 @@
 -- Add any additional keymaps here
 
 local keymap = vim.keymap
+local unset = vim.keymap.del
 local opts = { noremap = true, silent = true }
+
+-- remove default keymaps
+unset("n", ";")
 
 -- exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode jk" })
