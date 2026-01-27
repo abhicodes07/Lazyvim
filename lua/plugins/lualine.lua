@@ -153,7 +153,7 @@ return {
           end,
         },
       },
-      extensions = { "neo-tree", "lazy", "fzf", "mason", "trouble", "symbols-outline" },
+      extensions = { "neo-tree", "lazy", "fzf", "mason", "trouble", "symbols-outline", "toggelterm" },
     }
 
     return opts
