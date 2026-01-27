@@ -35,7 +35,7 @@ return {
         globalstatus = vim.o.laststatus == 3,
         disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard" } },
         section_separators = { left = "", right = "" },
-        component_separators = { left = "", right = "" },
+        component_separators = { left = "", right = "" },
       },
       sections = {
         lualine_a = {
@@ -132,7 +132,19 @@ return {
           },
         },
         lualine_y = {
-          { "progress", separator = " ", padding = { left = 1, right = 0 } },
+          {
+            function()
+              return ""
+            end,
+            color = { fg = "#00ffff", gui = "bold" },
+          },
+          { "progress", separator = " ", padding = { left = 0, right = 0 } },
+          {
+            function()
+              return ""
+            end,
+            color = { fg = "#00ffff", gui = "bold" },
+          },
           { "location", padding = { left = 0, right = 1 } },
         },
         lualine_z = {
