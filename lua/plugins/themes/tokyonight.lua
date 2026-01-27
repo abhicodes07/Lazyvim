@@ -6,7 +6,9 @@ return {
     style = "moon",
     styles = {
       keywords = { bold = true, italic = true },
-      functions = { italic = true },
+      functions = { bold = true },
+      classes = { italic = true },
+      constants = { bold = true },
       floats = "normal",
     },
     lualine_bold = true,
