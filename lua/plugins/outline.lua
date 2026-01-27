@@ -18,6 +18,10 @@ return {
       },
     },
 
+    symbol_folding = {
+      markers = { "", "" },
+    },
+
     symbols = {
       icons = {
         File = { icon = "", hl = "Identifier" },
