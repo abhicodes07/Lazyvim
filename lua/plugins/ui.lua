@@ -46,18 +46,6 @@ return {
     },
   },
 
-  -- status line
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = {
-      options = {
-        -- material
-        theme = "auto",
-      },
-    },
-  },
-
   -- which key
   {
     "folke/which-key.nvim",
