@@ -14,7 +14,7 @@ return {
 
     guides = {
       markers = {
-        bottom = "╰",
+        bottom = "╰╴",
       },
     },
 
