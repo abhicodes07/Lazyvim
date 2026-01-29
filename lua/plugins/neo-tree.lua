@@ -6,7 +6,7 @@ return {
         with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
         expander_collapsed = "",
         expander_expanded = "",
-        last_indent_marker = "╰",
+        last_indent_marker = "╰╴",
         expander_highlight = "NeoTreeExpander",
       },
       git_status = {
@@ -17,7 +17,7 @@ return {
           renamed = "󰑕",
           -- Status type
           untracked = "",
-          ignored = "󱓣",
+          ignored = "",
           unstaged = "",
           staged = "",
         },
