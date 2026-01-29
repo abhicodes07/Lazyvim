@@ -32,7 +32,7 @@ require("lazy").setup({
         -- tokyodark
         -- material-deep-ocean
         -- nord
-        colorscheme = "tokyonight",
+        colorscheme = "catppuccin",
       },
     },
     { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -57,7 +57,7 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
-  ui = { border = "double" }, -- add border to the window takes values: double, solid, rounded
+  ui = { border = "rounded" }, -- add border to the window takes values: double, solid, rounded
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
