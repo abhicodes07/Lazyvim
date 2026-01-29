@@ -42,7 +42,7 @@ return {
         -- "neogit",
         -- "neorg",
         -- "neotest",
-        -- "noice",
+        -- "noice", [[ don't turn this on ]]
         -- "nvim-cmp",
         -- "nvim-navic",
         "nvim-notify",
