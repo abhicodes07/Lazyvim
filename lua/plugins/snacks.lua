@@ -101,7 +101,7 @@ return {
         {
           pane = 2,
           section = "terminal",
-          cmd = "colorscript crunchbang-mini",
+          cmd = "colorscript blocks1",
           height = 6, -- By default 5
           padding = 4, -- By default 1
           align = "center",
