@@ -20,6 +20,7 @@ return {
         functions = { bold = true, undercurl = false },
         variables = { underline = false },
         strings = { bold = false },
+        types = { italic = true, bold = true },
       },
 
       plugins = {

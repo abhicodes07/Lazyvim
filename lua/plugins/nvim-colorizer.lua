@@ -10,7 +10,7 @@ return {
       javascript = { css = true },
       typescript = { css = true },
       tailwind = { css = true },
-      htmldjango = { css = true },
+      htmldjango = { css = true, tailwind = true },
     },
     user_default_options = {
       RGB = true, -- #RGB hex codes
