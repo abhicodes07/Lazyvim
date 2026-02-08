@@ -1,10 +1,13 @@
 -- lazy.nvim
 return {
   "folke/noice.nvim",
+  dependencies = {
+    "MunifTanjim/nui.nvim",
+    "rcarriga/nvim-notify",
+  },
   event = "VeryLazy",
   enabled = true,
   opts = {
-    -- add any options here
     -- you can enable a preset for easier configuration
     cmdline = {
       enabled = true, -- enables the Noice cmdline UI
@@ -12,11 +15,6 @@ return {
       opts = {}, -- global options for the cmdline. See section on views
       ---@type table<string, CmdlineFormat>
       format = {
-        -- conceal: (default=true) This will hide the text in the cmdline that matches the pattern.
-        -- view: (default is cmdline view)
-        -- opts: any options passed to the view
-        -- icon_hl_group: optional hl_group for the icon
-        -- title: set to anything or empty string to hide
         cmdline = { pattern = "^:", icon = "󰘳", lang = "vim" },
         search_down = { kind = "search", pattern = "^/", icon = " ", lang = "regex" },
         search_up = { kind = "search", pattern = "^%?", icon = " ", lang = "regex" },
@@ -24,7 +22,6 @@ return {
         lua = { pattern = { "^:%s*lua%s+", "^:%s*lua%s*=%s*", "^:%s*=%s*" }, icon = "", lang = "lua" },
         help = { pattern = "^:%s*he?l?p?%s+", icon = "" },
         input = { view = "cmdline_input", icon = "󰥻 " }, -- Used by input()
-        -- lua = false, -- to disable a format, set to `false`
       },
     },
     presets = {
@@ -55,9 +52,12 @@ return {
       enabled = false,
       view = "notify",
     },
-  },
-  dependencies = {
-    "MunifTanjim/nui.nvim",
-    "rcarriga/nvim-notify",
+    routes = {
+      filter = {
+        event = "notify",
+        find = "No information available",
+      },
+      opts = { skip = true },
+    },
   },
 }

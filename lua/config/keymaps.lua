@@ -75,6 +75,11 @@ keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
 
+-- noice
+keymap.set("n", "<leader>snl", function()
+  require("noice").cmd("last")
+end, { desc = "Noice last message" })
+
 -- material theme
 -- keymap.set("n", "<C-m>", function()
 --   require("material.functions").find_style()
