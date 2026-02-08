@@ -11,7 +11,7 @@ return {
     cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
 
     -- toggle theme style ---
-    toggle_style_key = "<leader>od", -- keybind to toggle theme style. Leave it nil to disable it, or set it to a string, for example "<leader>ts"
+    -- toggle_style_key = "<leader>od", -- keybind to toggle theme style. Leave it nil to disable it, or set it to a string, for example "<leader>ts"
     toggle_style_list = { "dark", "darker", "cool", "deep", "warm", "warmer", "light" }, -- List of styles to toggle between
   },
 
@@ -20,14 +20,14 @@ return {
   -- You can configure multiple style with comma separated, For e.g., keywords = 'italic,bold'
   code_style = {
     comments = "italic",
-    keywords = "italic",
-    functions = "italic",
+    keywords = "bold,italic",
+    functions = "bold",
     strings = "none",
-    variables = "italic",
-    booleans = "underdotted",
+    variables = "none",
+    booleans = "italic",
     types = "bold",
-    conditionals = "italic",
-    loops = "underline",
+    conditionals = "bold,italic",
+    loops = "italic",
   },
 
   -- Lualine options --
