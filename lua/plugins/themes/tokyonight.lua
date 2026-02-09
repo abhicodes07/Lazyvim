@@ -4,7 +4,7 @@ return {
   priority = 1000,
   opts = {
     style = "night",
-    transparent = true,
+    transparent = false,
     styles = {
       keywords = { bold = true, italic = true },
       functions = { bold = true },

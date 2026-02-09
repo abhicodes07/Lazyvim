@@ -22,16 +22,12 @@ require("lazy").setup({
       import = "lazyvim.plugins",
       opts = {
         -- catppuccin,
-        -- catppuccin-frappe,
         -- solarized-osaka,
         -- onedark
         -- oxocarbon
         -- tokyonight
-        -- tokyonight-storm
-        -- tokyonight-night
         -- tokyodark
         -- material-deep-ocean
-        -- nord
         colorscheme = "catppuccin",
       },
     },
