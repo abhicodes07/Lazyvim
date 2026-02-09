@@ -35,7 +35,7 @@ return {
         variables = {},
         numbers = {},
         booleans = { "italic" },
-        properties = {},
+        properties = { "italic" },
         types = { "bold" },
         operators = {},
         -- miscs = {}, -- Uncomment to turn off hard-coded styles
@@ -43,11 +43,11 @@ return {
 
       lsp_styles = { -- Handles the style of specific lsp hl groups (see `:h lsp-highlight`).
         virtual_text = {
-          errors = { "italic" },
-          hints = { "italic" },
-          warnings = { "italic" },
-          information = { "italic" },
-          ok = { "italic" },
+          errors = { "italic", "bold" },
+          hints = { "italic", "bold" },
+          warnings = { "italic", "bold" },
+          information = { "italic", "bold" },
+          ok = { "italic", "bold" },
         },
         underlines = {
           errors = { "undercurl" },
