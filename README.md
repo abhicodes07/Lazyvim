@@ -17,7 +17,7 @@
 <br>
 
 <div align="center">
-  <img src="assets/main.png"/>
+  <img src="assets/main2.png"/>
 </div>
 
 ---
