@@ -12,6 +12,7 @@ return {
       "html-lsp",
       "djlint",
       "django-template-lsp",
+      "taplo",
     },
     ui = {
       border = "rounded",
