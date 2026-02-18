@@ -6,12 +6,12 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/plugins-32-86e1fc?style=for-the-badge&logo=neovim&logoColor=b4f9f8&labelColor=%23222436">
   <img alt="Static Badge" src="https://img.shields.io/badge/plugin%20Manager-Lazy.nvim-cba6f7?style=for-the-badge&logo=neovim&logoColor=b4f9f8&labelColor=%23222436">
   <img alt="Static Badge" src="https://img.shields.io/badge/git-lazygit-ff007c?style=for-the-badge&logo=git&logoColor=b4f9f8&labelColor=%23222436">
-  <img alt="Static Badge" src="https://img.shields.io/badge/file%20manager-fzf%20%7C%20yazi-0db9d7?style=for-the-badge&logo=files&logoColor=b4f9f8&labelColor=%23222436">
+  <img alt="Static Badge" src="https://img.shields.io/badge/file%20manager-fzf%20%7C%20yazi-00ffff?style=for-the-badge&logo=files&logoColor=b4f9f8&labelColor=%23222436">
   <img alt="Static Badge" src="https://img.shields.io/badge/leader%20key-space-a6e3a1?style=for-the-badge&logo=neovim&logoColor=b4f9f8&labelColor=%23222436">
-  <img alt="Static Badge" src="https://img.shields.io/badge/_-11111b?style=for-the-badge&logo=apple">
-  <img alt="Static Badge" src="https://img.shields.io/badge/_-11111b?style=for-the-badge&logo=linux&logoColor=white">
-  <img alt="Static Badge" src="https://img.shields.io/badge/WSL2-11111b?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Windows-11111b?style=for-the-badge">
+  <img alt="Static Badge" src="https://img.shields.io/badge/_-1e1e2e?style=for-the-badge&logo=apple&logoColor=00ffff">
+  <img alt="Static Badge" src="https://img.shields.io/badge/_-1e1e2e?style=for-the-badge&logo=linux&logoColor=00ffff">
+  <img alt="Static Badge" src="https://img.shields.io/badge/WSL2-1e1e2e?style=for-the-badge&logoColor=00ffff">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Windows-1e1e2e?style=for-the-badge&logoColor=00ffff">
 </div>
 
 <br>
