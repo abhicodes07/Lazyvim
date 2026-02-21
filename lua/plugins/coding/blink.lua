@@ -85,6 +85,7 @@ return {
         min_width = 25,
         max_height = 20,
         border = "rounded",
+        winhighlight = "FloatBorder:FloatBorder,CursorLine:IncSearch",
         draw = {
           padding = { 0, 1 },
           components = {
@@ -150,6 +151,12 @@ return {
       },
     },
 
-    signature = { window = { border = "rounded" } },
+    signature = {
+      enabled = true,
+      window = {
+        border = "rounded",
+        winblend = 100,
+      },
+    },
   },
 }
