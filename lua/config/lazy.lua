@@ -28,6 +28,7 @@ require("lazy").setup({
         -- tokyonight
         -- tokyodark
         -- material-deep-ocean
+        -- gruvbox, kanagawa
         colorscheme = "catppuccin",
       },
     },
