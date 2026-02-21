@@ -155,7 +155,7 @@ return {
       enabled = true,
       window = {
         border = "rounded",
-        winblend = 100,
+        winhighlight = "FloatBorder:FloatBorder,CursorLine:IncSearch",
       },
     },
   },
