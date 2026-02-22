@@ -5,9 +5,15 @@ return {
   opts = {
     -- choose between "single", "rounded", "bold" and "double".
     -- Or pass a table like this: { "─", "│", "┌", "┐", "└", "┘" },
-    border = "bold",
+    border = "rounded",
     excluded_ft = { "packer", "TelescopePrompt", "mason" },
-    highlight = nil, -- nil|string|function. See the docs's Highlights section
+    highlight = function()
+      vim.api.nvim_set_hl(
+        0,
+        "ColorfulWinSep",
+        { fg = vim.api.nvim_get_hl(0, { name = "NormalDark", link = false }).fg }
+      )
+    end, -- nil|string|function. See the docs's Highlights section
     animate = {
       enabled = "shift", -- false to disable, or choose a option below (e.g. "shift") and set option for it if needed
       shift = {
