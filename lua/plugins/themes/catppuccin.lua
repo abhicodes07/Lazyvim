@@ -31,11 +31,11 @@ return {
         loops = {},
         functions = { "bold" },
         keywords = { "bold", "italic" },
-        strings = {},
+        strings = { "italic" },
         variables = {},
         numbers = {},
         booleans = { "italic" },
-        properties = { "italic" },
+        properties = {},
         types = { "bold" },
         operators = {},
         -- miscs = {}, -- Uncomment to turn off hard-coded styles
@@ -51,13 +51,13 @@ return {
         },
         underlines = {
           errors = { "undercurl" },
-          hints = { "underdotted" },
+          hints = { "underline" },
           warnings = { "underdotted" },
           information = { "underdotted" },
           ok = { "underline" },
         },
         inlay_hints = {
-          background = true,
+          background = false,
         },
       },
 
