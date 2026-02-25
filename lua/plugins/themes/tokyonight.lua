@@ -3,7 +3,7 @@ return {
   lazy = false,
   priority = 1000,
   opts = {
-    style = "night",
+    style = "night", -- storm, moon, night
     transparent = false,
     styles = {
       keywords = { bold = true, italic = true },
@@ -11,14 +11,17 @@ return {
       classes = { italic = true },
       constants = { bold = true },
       types = { italic = true },
-      conditionals = { italic = true },
+      conditionals = { italic = true, bold = true },
       loops = {},
       booleans = { italic = true },
       properties = {},
       operators = {},
-      floats = "normal",
+      -- Background styles. Can be "dark", "transparent" or "normal"
+      floats = "transparent",
+      sidebars = "transparent",
     },
     lualine_bold = true,
+    on_highlights = function(hl, c) end,
     plugins = {
       notify = true,
       blink = true,

@@ -54,7 +54,7 @@ return {
     end,
     theme = "wave", -- Load "wave" theme / lotus, dragon
     background = { -- map the value of 'background' option to a theme
-      dark = "wave", -- try "dragon" or "wave" !
+      dark = "dragon", -- try "dragon" or "wave" !
       light = "lotus",
     },
   },

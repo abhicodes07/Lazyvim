@@ -84,6 +84,7 @@ return {
         enabled = true,
         min_width = 25,
         max_height = 20,
+        winblend = 25,
         border = "rounded",
         winhighlight = "FloatBorder:FloatBorder,CursorLine:IncSearch",
         draw = {

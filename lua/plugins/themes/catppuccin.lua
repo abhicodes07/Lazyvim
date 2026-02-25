@@ -28,10 +28,10 @@ return {
       styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
         comments = { "italic" }, -- Change the style of comments
         conditionals = { "italic" },
-        loops = {},
+        loops = { "italic" },
         functions = { "bold" },
         keywords = { "bold", "italic" },
-        strings = { "italic" },
+        strings = {},
         variables = {},
         numbers = {},
         booleans = { "italic" },
