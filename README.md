@@ -41,6 +41,23 @@ This setup of **Lazyvim** offers an aesthetically pleasing and highly efficient 
 - 📦 **Mason** for managing LSP servers, formatters, and linters
 - 🖌️ Beautiful **colorschemes** and UI enhancements
 
+## 📂 File Structure
+
+```
+
+./
+├── assets/
+└── lua/
+    ├── config/         # main config files
+    └── plugins/
+        ├── coding/     # workspace plugins
+        ├── editor/     # editor plugins
+        ├── lsp/        # LSP configs
+        ├── terminal/   # Terminal plugins
+        ├── themes/     # Colorschemes
+        └── ui/         # UI plugins
+```
+
 ## 📦 Installation & Setup
 
 > [!WARNING]
