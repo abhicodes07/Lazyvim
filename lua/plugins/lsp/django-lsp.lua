@@ -18,7 +18,7 @@ return {
       },
       -- HTML LSP for Django Templates
       html = {
-        filetypes = { "html", "htmldjango", "jinja", "jinja2" },
+        filetypes = { "html", "htmldjango", "jinja", "jinja2", "markdown" },
       },
     },
   },
