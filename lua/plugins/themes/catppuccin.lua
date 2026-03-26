@@ -62,7 +62,12 @@ return {
       },
 
       color_overrides = {},
-      custom_highlights = {},
+      custom_highlights = function(colors)
+        return {
+          LineNr = { fg = colors.lavender },
+          CursorLineNr = { fg = colors.peach },
+        }
+      end,
       default_integrations = true,
       integrations = {
         cmp = true,
