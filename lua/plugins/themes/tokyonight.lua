@@ -4,7 +4,7 @@ return {
   priority = 1000,
   opts = {
     style = "night", -- storm, moon, night
-    transparent = true,
+    transparent = false,
     styles = {
       keywords = { bold = true, italic = true },
       functions = { bold = true },
@@ -12,7 +12,7 @@ return {
       constants = { bold = true },
       types = { italic = true },
       conditionals = { italic = true, bold = true },
-      loops = {},
+      loops = { italic = true },
       booleans = { italic = true },
       properties = {},
       operators = {},
