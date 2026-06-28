@@ -29,7 +29,10 @@ require("lazy").setup({
         -- tokyodark
         -- material-deep-ocean
         -- gruvbox, kanagawa
-        colorscheme = "catppuccin",
+        -- aurora
+        -- citruszest
+        -- rose-pine
+        colorscheme = "tokyonight",
       },
     },
     { import = "lazyvim.plugins.extras.lang.typescript" },
