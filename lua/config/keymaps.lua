@@ -11,6 +11,9 @@ unset("n", ";")
 
 -- exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode jk" })
+keymap.set("i", "kj", "<ESC>", { desc = "Exit insert mode kj" })
+keymap.set("i", "JK", "<ESC>", { desc = "Exit insert mode JK" })
+keymap.set("i", "KJ", "<ESC>", { desc = "Exit insert mode KJ" })
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
