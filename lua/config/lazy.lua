@@ -32,7 +32,7 @@ require("lazy").setup({
         -- aurora
         -- citruszest
         -- rose-pine
-        colorscheme = "tokyonight",
+        colorscheme = "rose-pine",
       },
     },
     { import = "lazyvim.plugins.extras.lang.typescript" },
